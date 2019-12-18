@@ -1,0 +1,24 @@
+
+#是否打开keepalive
+openKeepAlive=true
+
+#unit: second
+keepAliveSec=30
+
+#客户端连接的端口
+publicPort=28993
+
+#公网ip
+publicIp="127.0.0.1"
+
+#send buff
+sndBuff=65535
+
+#receive buff
+rcvBuff=1024
+
+#等待连接的队列大小
+backLog=1024
+
+#tcpNodelay,禁用nagle算法
+tcpNodelay=true
