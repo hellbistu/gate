@@ -12,7 +12,3 @@ IdleStateHandler 负责keep alive检测，如果超时未收到客户端发来�
 
 KeepAliveHandler 负责检测IdleStateEvent事件，踢掉非活跃的客户端连接
 
-```sequence
-a->b:a
-b-a:b
-```
