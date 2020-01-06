@@ -12,7 +12,7 @@ publicPort=28993
 publicIp="127.0.0.1"
 
 #send buff
-sndBuff=65535
+sndBuff=16384
 
 #receive buff
 rcvBuff=1024

@@ -40,7 +40,7 @@ public class Bootstrap {
 
         bootstrap.group(bossGroup,workGroup)
                 .channel(NioServerSocketChannel.class)
-                .childOption(ChannelOption.SO_BACKLOG,config.getBackLog()) //建立连接的队列
+                .option(ChannelOption.SO_BACKLOG,config.getBackLog()) //建立连接的队列
                 .childOption(ChannelOption.SO_SNDBUF,config.getSndBuff()) //snd buff
                 .childOption(ChannelOption.SO_RCVBUF,config.getRcvBuff()) //receive buff
                 .childOption(ChannelOption.TCP_NODELAY,config.isTcpNodelay()) //禁用 nagle算法
